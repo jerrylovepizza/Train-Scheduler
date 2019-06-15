@@ -1,0 +1,177 @@
+/* Renjie Dai Train Scheduler */
+
+body {
+    background: url(../images/tr1.jpg);
+    background-size: fixed;
+    background-attachment: fixed;
+    animation: Gradient 20s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes Gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+#jumbonav{
+    border-radius: 6px;
+    opacity: .8;
+    padding: 20px;
+    text-align: center;
+}
+
+.clock{
+    padding: 2%;
+    height: 120px;
+}
+
+
+/* left */
+.card-header .fa {
+    transition: .3s transform ease-in-out;
+}
+
+.dropdown{
+float: right;
+position: absolute;
+}
+
+.add-info{
+    font-family: 'Economica', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0 20px 30px;
+    padding-bottom: 55px;
+}
+
+label{
+    width: 100%;
+    margin: 10px 0;
+}
+
+#train-hour, #train-min{
+    float: left;
+    width: 30%;
+}
+
+#train-ampm{
+    float: right;
+    width: 30%;
+}
+
+#submit-button{
+    float:right;
+    margin: 10px 0 0;
+}
+
+/* date and time */
+.time-container{
+    background: black;
+    border-radius: 0 0 20px 20px;
+    padding: 5px 5px 10px;
+    /* margin-top: 5px; */
+}
+
+.time-moment, .day-moment, .date-moment{
+    text-align: center;
+    font-size: 100%;
+    padding: 4px;
+    color: white;
+}
+
+.time-moment{
+    border-bottom: 2px solid;
+    font-size: 170%;
+    font-weight: bolder;
+}
+
+/* right */
+#train-table{
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+    font-size: 110%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    /* border-radius: 0 0 20px 20px; */
+    margin: 0;
+}
+.table-plus{
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    font-family: 'Economica', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    border-top: white 1px dotted;
+    border-radius: 0 0 20px 20px;
+    margin: 0 0 50px;
+
+}
+
+th{
+    width: 17.5%;
+    padding: 10px 0 !important;
+}
+
+.table-body :hover{
+    font-weight: bold;
+    background: rgb(0, 0, 0, .3);
+    color: wheat;
+}
+
+#remove-button{
+    border-radius: 50%;
+    height: 80%;
+    padding: 0 5px;
+}
+
+#remove-button :hover{
+    background: rgb(0, 0, 0);
+}
+
+footer {
+    float: left;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    height: 20px;
+    }
+
+/* media query */
+@media (min-width: 575px) and (max-width: 768px) {
+
+.time-moment{
+    font-size: 100%;
+}
+
+#train-hour, #train-min{
+    float: left;
+    width: 100%;
+}
+
+#train-ampm{
+    float: left;
+    width: 100%;
+}
+
+th, td{
+    font-size: 85%;
+}
+}
+
+@media (max-width: 574px) {
+
+#jumbonav{
+    padding: 15px;
+}
+#jumbo{
+    font-size: 200%;
+}
+#leader, th, td{
+    font-size: 70%;
+}
+}
